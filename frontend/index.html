@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Nhận diện người nổi tiếng</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="bg-gradient-hero">
+        <main class="min-vh-100 d-flex  align-items-center justify-content-center p-3">
+            <div class="card shadow-lg border-0 w-100" style="max-width: 450px;">
+                <div class="card-body p-4 text-center">
+                    <h3 class="mb-4">Nhận diện người nổi tiếng</h3>
+
+                    <input id="fileInput" type="file" class="form-control mb-3" accept="image/*">
+
+                    <img id="preview" class="img-fluid rounded mb-3 d-none" alt="Ảnh xem trước">
+
+                    <button id="btnPredict" class="btn btn-primary w-100" disabled>
+                        <span id="spinner" class="spinner-border spinner-border-sm d-none"></span>
+                        <span id="btnText">Nhận diện</span>
+                    </button>
+
+                    <div id="error" class="alert alert-danger mt-3 mb-0 d-none"></div>
+
+                    <div id="result" class="mt-4 d-none">
+                        <h4 id="name" class="mb-3"></h4>
+                        <div class="progress">
+                            <div id="bar" class="progress-bar" style="width: 0%"></div>
+                        </div>
+                        <small class="text-muted">Độ tin cậy</small>
+                        <button id="btnReset" class="btn btn-outline-secondary w-100 mt-2 d-none">Thử ảnh khác</button>
+                    </div>
+
+                    
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

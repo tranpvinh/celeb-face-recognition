@@ -1,0 +1,11 @@
+.bg-gradient-hero {
+  min-height: 100vh;
+  background-color: #ffffff;
+  background-image:
+    radial-gradient(ellipse 60% 50% at 0% 0%,    rgba(80, 170, 255, 0.45),  transparent 70%), /* xanh dương nhạt, trên trái */
+    radial-gradient(ellipse 50% 45% at 100% 0%,  rgba(255, 215, 110, 0.50), transparent 70%), /* vàng nhạt, trên phải */
+    radial-gradient(ellipse 45% 40% at 0% 55%,   rgba(255, 130, 180, 0.35), transparent 70%), /* hồng, giữa trái */
+    radial-gradient(ellipse 45% 40% at 100% 50%, rgba(170, 130, 255, 0.35), transparent 70%); /* tím nhạt, giữa phải */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
